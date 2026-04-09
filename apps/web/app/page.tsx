@@ -49,8 +49,8 @@ const contactActions: ContactAction[] = [
   },
   {
     label: "LinkedIn",
-    value: "alex-lewis",
-    href: "https://www.linkedin.com/in/alex-lewis/",
+    value: "ajrlewis",
+    href: "https://www.linkedin.com/in/ajrlewis/",
     icon: "link"
   },
   {
