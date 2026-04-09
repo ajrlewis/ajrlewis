@@ -131,7 +131,7 @@ const projects: Project[] = [
     title: "Digital Speed",
     tags: ["Next.js", "Vercel AI SDK", "Slack", "Internal Tools"],
     description:
-      "Built Speedy, an internal Slack-based agent in TypeScript/Next.js using the Vercel AI SDK, handling team operational queries through a multi-step tool-calling loop over handbook data (pgvector) and live integrations (GitHub via MCP, Productive.io); added structured logging and evals to iterate on response quality.",
+      "Teams needed reliable operational answers in Slack; built a TypeScript/Next.js AI agent with handbook and tool integrations for fast, in-context support.",
     outcome: "Faster answers, fewer context switches.",
     icon: "bolt",
     iconSrc: "/icons/slack.svg"
@@ -140,7 +140,7 @@ const projects: Project[] = [
     title: "Downing LLP",
     tags: ["LangGraph", "Azure", "HITL", "Microsoft Teams"],
     description:
-      "Architected and delivered a Python-based, Azure-native, model-agnostic AI orchestration platform (LangGraph) to automate internal support triage. Engineered a manifest-driven multi-agent framework enabling dynamic registration of department-specific bots for enterprise scaling. Delivered a production-ready Phase 1 pilot with multi-provider switching (Anthropic, Google, OpenAI) and HITL validation via Microsoft Teams for internal digital team query classification. Implemented secure, thread-aware state management using Azure PostgreSQL and Managed Identity for reliable conversation persistence and traceability. Centralized prompt management and evaluation with LangSmith to improve debugging visibility and iteration speed. Established a gated, trunk-based CI/CD pipeline in Azure DevOps, enabling progression from R&D to UAT readiness.",
+      "Support triage was fragmented; delivered an Azure-native LangGraph orchestration platform with Teams HITL workflows, secure state management, and provider-flexible automation.",
     outcome: "Reduced triage time and clearer priorities.",
     icon: "chat",
     iconSrc: "/icons/microsoft-teams.svg"
@@ -149,7 +149,7 @@ const projects: Project[] = [
     title: "Hyperhumans",
     tags: ["FastAPI", "OpenAI", "SQLAlchemy", "RBAC"],
     description:
-      "Architected the Neuralead lead-intelligence API, delivering a scalable platform for automated company discovery and multi-source LLM enrichment. Engineered complex multi-stage enrichment pipelines integrating Bing Search, OpenAI, and Hunter.io to automate high-volume contact data extraction and lead scoring. Led the architectural migration from a Flask prototype to a high-performance FastAPI backend, implementing robust Pydantic schema validation to ensure 99.9% API contract reliability. Designed and implemented a commercial-grade API monetization engine with credit metering and RBAC to support tiered subscription models. Optimized large-scale data access patterns and pagination using SQLAlchemy, reducing response latency for downstream consumers of high-density datasets. Contributed to production deployment workflows through pull requests and main-branch integration in CI/CD pipelines supporting deployment to Google Cloud Run.",
+      "Lead discovery was manual and noisy; built the Neuralead FastAPI platform for automated enrichment, scoring, and monetized API delivery at scale.",
     outcome: "Higher-quality leads and more relevant conversations.",
     icon: "spark",
     iconSrc: "/icons/hyperhumans.png"
