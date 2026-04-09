@@ -100,7 +100,7 @@ const services: Service[] = [
   {
     title: "Consulting",
     description:
-      "I assess workflows and constraints to identify where AI can improve ROI and define a practical delivery plan.",
+      "I assess workflows and constraints to identify where AI can improve ROI, then work with your CTO to define and implement the right delivery path.",
     iconSrc: "/icons/service-architecture.svg"
   },
   {
