@@ -93,7 +93,7 @@ const services: Service[] = [
   {
     title: "Agentic & Workflow Systems",
     description:
-      "Implementing robust LangGraph and HITL pipelines with FastAPI, Dockerized services, and deployment-ready operational patterns.",
+      "Implementing state-of-the-art agentic and workflow systems with HITL checkpoints, FastAPI services, and deployment-ready orchestration grounded in a verify-don't-trust ethos.",
     iconSrc: "/icons/service-workflow.svg"
   },
   {
