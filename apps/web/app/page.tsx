@@ -98,21 +98,15 @@ const phdDownloads: DownloadAction[] = [
 
 const services: Service[] = [
   {
-    title: "AI Architecture",
+    title: "AI ROI Consulting",
     description:
-      "Designing AI systems that integrate cleanly with your product, data model, API boundaries, infrastructure, and security posture.",
+      "I assess your workflows and constraints to identify where AI can improve ROI, then define a practical delivery plan.",
     iconSrc: "/icons/service-architecture.svg"
   },
   {
-    title: "Agentic & Workflow Systems",
+    title: "Implementation & Team Enablement",
     description:
-      "Implementing robust agentic and workflow systems with HITL checkpoints and deployment-ready orchestration; recommended stack: FastAPI + Next.js + PostgreSQL (pgvector) for semantic retrieval.",
-    iconSrc: "/icons/service-workflow.svg"
-  },
-  {
-    title: "Prototypes That Deliver",
-    description:
-      "Rapid validation focused on measurable ROI, clean documentation, and handover paths that enable internal teams to scale confidently.",
+      "I implement production-ready systems and teach your team how to use, operate, and extend what we build. Recommended stack: FastAPI + Next.js + PostgreSQL (pgvector) for semantic retrieval.",
     iconSrc: "/icons/service-delivery.svg"
   }
 ];
