@@ -313,7 +313,7 @@ export default function HomePage() {
                 <Icon type="calendar" />
                 <span>Book a Consultation</span>
               </a>
-              <a className="glass-button secondary-cta" href="https://calendly.com" target="_blank" rel="noreferrer">
+              <a className="glass-button secondary-cta" href="https://calendly.com/ajrlewis" target="_blank" rel="noreferrer">
                 <Icon type="calendar" />
                 <span>Calendly</span>
               </a>
