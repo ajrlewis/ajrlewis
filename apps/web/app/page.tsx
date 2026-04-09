@@ -131,7 +131,7 @@ const projects: Project[] = [
     title: "Digital Speed",
     tags: ["Next.js", "Vercel AI SDK", "Slack", "Internal Tools"],
     description:
-      "Internal Slack assistant connected to handbook content and operational tools for high-confidence answers in context.",
+      "Built Speedy, an internal Slack-based agent in TypeScript/Next.js using the Vercel AI SDK, handling team operational queries through a multi-step tool-calling loop over handbook data (pgvector) and live integrations (GitHub via MCP, Productive.io); added structured logging and evals to iterate on response quality.",
     outcome: "Faster answers, fewer context switches.",
     icon: "bolt",
     iconSrc: "/icons/slack.svg"
