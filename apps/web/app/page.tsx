@@ -255,7 +255,7 @@ export default function HomePage() {
               <img src="/profile.jpg" alt="Alex Lewis observing at ALMA/LABOCA in the Atacama Desert, Chile" />
               <div className="image-caption">
                 <img className="caption-icon-image" src="/icons/telescope.svg" alt="" aria-hidden="true" />
-                <span>Observing at ALMA/LABOCA, Atacama Desert, Chile, 2016</span>
+                <span>In front of ALMA whilst observing with LABOCA, Atacama Desert, Chile, 2016.</span>
               </div>
             </div>
           </div>
