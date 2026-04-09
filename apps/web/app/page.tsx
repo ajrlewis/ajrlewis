@@ -333,6 +333,13 @@ export default function HomePage() {
               <Icon type="pin" />
               <span>London, UK (Worldwide)</span>
             </p>
+            <div className="bitcoin-badge">
+              <img className="bitcoin-icon-image" src="/icons/bitcoin.svg" alt="" aria-hidden="true" />
+              <span className="bitcoin-badge-copy">
+                <strong>Bitcoin accepted here</strong>
+                <small>for consulting invoices</small>
+              </span>
+            </div>
           </div>
         </section>
       </div>

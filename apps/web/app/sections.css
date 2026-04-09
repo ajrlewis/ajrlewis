@@ -246,6 +246,42 @@
   color: var(--text-0);
 }
 
+.bitcoin-badge {
+  margin-top: 0.4rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.66rem;
+  width: fit-content;
+  padding: 0.52rem 0.74rem;
+  border-radius: 12px;
+  border: 1px solid rgba(247, 147, 26, 0.34);
+  background: rgba(247, 147, 26, 0.09);
+}
+
+.bitcoin-icon-image {
+  width: 18px;
+  height: 18px;
+  display: block;
+  flex: 0 0 18px;
+}
+
+.bitcoin-badge-copy {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.bitcoin-badge-copy strong {
+  color: #ffd39a;
+  font-size: 0.83rem;
+  font-weight: 700;
+}
+
+.bitcoin-badge-copy small {
+  color: rgba(255, 231, 198, 0.8);
+  font-size: 0.7rem;
+}
+
 @media (max-width: 1180px) {
   .projects-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
