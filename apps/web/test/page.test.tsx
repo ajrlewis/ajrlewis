@@ -29,9 +29,9 @@ describe("HomePage", () => {
   it("includes the four selected project cards", () => {
     render(<HomePage />);
 
-    expect(screen.getByRole("heading", { name: "RFP LangGraph Agent" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Digital Speed" })).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "Downing LLP" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Hyperhumans" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "W4lkies" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Downing LLP" })).toBeInTheDocument();
   });
 });

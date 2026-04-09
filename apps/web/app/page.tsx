@@ -119,15 +119,6 @@ const backgroundSteps: BackgroundStep[] = [
 
 const projects: Project[] = [
   {
-    title: "RFP LangGraph Agent",
-    badge: "Open Source",
-    tags: ["LangGraph", "Python", "HITL", "RFP"],
-    description:
-      "Workflow-driven assistant for structured RFP analysis and drafting with review checkpoints and auditable output steps.",
-    outcome: "Reliable workflows with verifiable checkpoints.",
-    icon: "network"
-  },
-  {
     title: "Digital Speed",
     tags: ["Next.js", "Vercel AI SDK", "Slack", "Internal Tools"],
     description:
@@ -137,15 +128,6 @@ const projects: Project[] = [
     iconSrc: "/icons/digitalspeed-site-icon.ico"
   },
   {
-    title: "Downing LLP",
-    tags: ["LangGraph", "Azure", "HITL", "Microsoft Teams"],
-    description:
-      "Support triage was fragmented; delivered an Azure-native LangGraph orchestration platform with Teams HITL workflows, secure state management, and provider-flexible automation.",
-    outcome: "Reduced triage time and clearer priorities.",
-    icon: "chat",
-    iconSrc: "/icons/downing-site-icon.png"
-  },
-  {
     title: "Hyperhumans",
     tags: ["FastAPI", "OpenAI", "SQLAlchemy", "RBAC"],
     description:
@@ -153,6 +135,25 @@ const projects: Project[] = [
     outcome: "Higher-quality leads and more relevant conversations.",
     icon: "spark",
     iconSrc: "/icons/hyperhumans-site-icon.jpg"
+  },
+  {
+    title: "W4lkies",
+    badge: "Open Source",
+    tags: ["Next.js", "FastAPI", "PostgreSQL", "Docker"],
+    description:
+      "Operations were manual and admin-heavy; built W4lkies, a full-stack platform unifying bookings, customer and dog profiles, invoicing, and expenses.",
+    outcome: "Lower admin overhead and smoother daily operations.",
+    icon: "network",
+    iconSrc: "/icons/w4lkies-site-icon.svg"
+  },
+  {
+    title: "Downing LLP",
+    tags: ["LangGraph", "Azure", "HITL", "Microsoft Teams"],
+    description:
+      "Support triage was fragmented; delivered an Azure-native LangGraph orchestration platform with Teams HITL workflows, secure state management, and provider-flexible automation.",
+    outcome: "Reduced triage time and clearer priorities.",
+    icon: "chat",
+    iconSrc: "/icons/downing-site-icon.png"
   }
 ];
 
