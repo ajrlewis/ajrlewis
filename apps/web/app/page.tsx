@@ -170,7 +170,7 @@ export default function HomePage() {
         <section className="hero glass-panel" aria-label="Hero">
           <div className="hero-copy">
             <h1 className="hero-name">
-              <span>Alex</span> <span className="gold">Lewis</span>
+              <span>A. J. R.</span> <span className="gold">Lewis</span>
             </h1>
             <p className="hero-title">AI Architect</p>
             <div className="accent-line" aria-hidden="true" />

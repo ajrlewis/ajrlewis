@@ -6,7 +6,7 @@ describe("HomePage", () => {
   it("renders the core landing sections", () => {
     render(<HomePage />);
 
-    expect(screen.getByRole("heading", { name: /alex lewis/i })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /a\.\s*j\.\s*r\.\s*lewis/i })).toBeInTheDocument();
     expect(screen.getByText(/my background/i)).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "PhD" })).toBeInTheDocument();
     expect(screen.getByText(/phd thesis/i)).toBeInTheDocument();
