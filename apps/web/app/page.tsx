@@ -147,9 +147,9 @@ const projects: Project[] = [
   },
   {
     title: "Hyperhumans",
-    tags: ["LLM", "Leadgen", "Automation", "Integration"],
+    tags: ["FastAPI", "OpenAI", "SQLAlchemy", "RBAC"],
     description:
-      "LLM-driven lead generation workflow integrating enrichment and qualification signals into existing outreach operations.",
+      "Architected the Neuralead lead-intelligence API, delivering a scalable platform for automated company discovery and multi-source LLM enrichment. Engineered complex multi-stage enrichment pipelines integrating Bing Search, OpenAI, and Hunter.io to automate high-volume contact data extraction and lead scoring. Led the architectural migration from a Flask prototype to a high-performance FastAPI backend, implementing robust Pydantic schema validation to ensure 99.9% API contract reliability. Designed and implemented a commercial-grade API monetization engine with credit metering and RBAC to support tiered subscription models. Optimized large-scale data access patterns and pagination using SQLAlchemy, reducing response latency for downstream consumers of high-density datasets. Contributed to production deployment workflows through pull requests and main-branch integration in CI/CD pipelines supporting deployment to Google Cloud Run.",
     outcome: "Higher-quality leads and more relevant conversations.",
     icon: "spark",
     iconSrc: "/icons/hyperhumans.png"
