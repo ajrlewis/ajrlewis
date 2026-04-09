@@ -95,7 +95,8 @@
 .glass-button:hover,
 .cta-button:hover,
 .project-card:hover,
-.service-card:hover {
+.service-card:hover,
+.background-step:hover {
   transform: translateY(-2px);
   border-color: rgba(110, 164, 232, 0.44);
   box-shadow: 0 16px 30px rgba(0, 0, 0, 0.35);
