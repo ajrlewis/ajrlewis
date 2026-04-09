@@ -118,11 +118,37 @@
   min-width: 136px;
 }
 
+.contact-action {
+  display: inline-flex;
+  align-items: stretch;
+  gap: 0.42rem;
+}
+
 .contact-icon-image {
   width: 16px;
   height: 16px;
   display: block;
   flex: 0 0 16px;
+}
+
+.contact-copy-button {
+  border-radius: 10px;
+  border: 1px solid var(--glass-border);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  color: var(--text-1);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.56rem 0.64rem;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-copy-button:hover {
+  transform: translateY(-2px);
+  border-color: rgba(110, 164, 232, 0.44);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.35);
 }
 
 .file-button {
@@ -224,6 +250,10 @@
 @media (max-width: 700px) {
   .button-row {
     flex-direction: column;
+  }
+
+  .contact-action {
+    width: 100%;
   }
 
   .contact-button,

@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 type IconType =
   | "phone"
   | "mail"
@@ -17,6 +21,7 @@ type ContactAction = {
   href: string;
   icon: IconType;
   iconSrc?: string;
+  copyValue?: string;
 };
 
 type DownloadAction = {
@@ -76,6 +81,14 @@ const contactActions: ContactAction[] = [
     href: "https://github.com/ajrlewis",
     icon: "github",
     iconSrc: "/icons/github.svg"
+  },
+  {
+    label: "Nostr",
+    value: "npub1your...key",
+    href: "https://njump.me/npub1yourfullnostrpublickeyhere",
+    icon: "link",
+    iconSrc: "/icons/nostr.svg",
+    copyValue: "npub1yourfullnostrpublickeyhere"
   }
 ];
 
@@ -166,6 +179,23 @@ function Icon({ type }: { type: IconType }) {
 }
 
 export default function HomePage() {
+  const [copiedContact, setCopiedContact] = useState<string | null>(null);
+
+  const copyContactValue = async (label: string, value: string) => {
+    if (typeof navigator === "undefined" || !navigator.clipboard) {
+      return;
+    }
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopiedContact(label);
+      window.setTimeout(() => {
+        setCopiedContact((current) => (current === label ? null : current));
+      }, 1800);
+    } catch {
+      setCopiedContact(null);
+    }
+  };
+
   return (
     <main className="page">
       <div className="shell">
@@ -188,24 +218,33 @@ export default function HomePage() {
 
             <div className="button-row" role="list" aria-label="Primary contact methods">
               {contactActions.map((item) => (
-                <a
-                  className="glass-button contact-button"
-                  href={item.href}
-                  key={item.label}
-                  role="listitem"
-                  target={item.href.startsWith("http") ? "_blank" : undefined}
-                  rel={item.href.startsWith("http") ? "noreferrer" : undefined}
-                >
-                  {item.iconSrc ? (
-                    <img className="contact-icon-image" src={item.iconSrc} alt="" aria-hidden="true" />
-                  ) : (
-                    <Icon type={item.icon} />
-                  )}
-                  <span className="button-copy">
-                    <span>{item.label}</span>
-                    <small>{item.value}</small>
-                  </span>
-                </a>
+                <div className="contact-action" key={item.label} role="listitem">
+                  <a
+                    className="glass-button contact-button"
+                    href={item.href}
+                    target={item.href.startsWith("http") ? "_blank" : undefined}
+                    rel={item.href.startsWith("http") ? "noreferrer" : undefined}
+                  >
+                    {item.iconSrc ? (
+                      <img className="contact-icon-image" src={item.iconSrc} alt="" aria-hidden="true" />
+                    ) : (
+                      <Icon type={item.icon} />
+                    )}
+                    <span className="button-copy">
+                      <span>{item.label}</span>
+                      <small>{item.value}</small>
+                    </span>
+                  </a>
+                  {item.copyValue ? (
+                    <button
+                      className="contact-copy-button"
+                      type="button"
+                      onClick={() => void copyContactValue(item.label, item.copyValue!)}
+                    >
+                      {copiedContact === item.label ? "Copied" : "Copy npub"}
+                    </button>
+                  ) : null}
+                </div>
               ))}
             </div>
 
