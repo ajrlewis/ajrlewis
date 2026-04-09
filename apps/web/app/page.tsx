@@ -16,6 +16,7 @@ type ContactAction = {
   value: string;
   href: string;
   icon: IconType;
+  iconSrc?: string;
 };
 
 type DownloadAction = {
@@ -46,24 +47,33 @@ type Project = {
 };
 
 const contactActions: ContactAction[] = [
-  { label: "Call", value: "+44 7535 791970", href: "tel:+447535791970", icon: "phone" },
+  {
+    label: "Call",
+    value: "+44 7535 791970",
+    href: "tel:+447535791970",
+    icon: "phone",
+    iconSrc: "/icons/phone.svg"
+  },
   {
     label: "Email",
     value: "hello@ajrlewis.com",
     href: "mailto:hello@ajrlewis.com",
-    icon: "mail"
+    icon: "mail",
+    iconSrc: "/icons/email.svg"
   },
   {
     label: "LinkedIn",
     value: "ajrlewis",
     href: "https://www.linkedin.com/in/ajrlewis/",
-    icon: "link"
+    icon: "link",
+    iconSrc: "/icons/linkedin.svg"
   },
   {
     label: "GitHub",
     value: "ajrlewis",
     href: "https://github.com/ajrlewis",
-    icon: "github"
+    icon: "github",
+    iconSrc: "/icons/github.svg"
   }
 ];
 
@@ -185,7 +195,11 @@ export default function HomePage() {
                   target={item.href.startsWith("http") ? "_blank" : undefined}
                   rel={item.href.startsWith("http") ? "noreferrer" : undefined}
                 >
-                  <Icon type={item.icon} />
+                  {item.iconSrc ? (
+                    <img className="contact-icon-image" src={item.iconSrc} alt="" aria-hidden="true" />
+                  ) : (
+                    <Icon type={item.icon} />
+                  )}
                   <span className="button-copy">
                     <span>{item.label}</span>
                     <small>{item.value}</small>

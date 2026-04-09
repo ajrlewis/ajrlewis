@@ -117,6 +117,13 @@
   min-width: 136px;
 }
 
+.contact-icon-image {
+  width: 16px;
+  height: 16px;
+  display: block;
+  flex: 0 0 16px;
+}
+
 .file-button {
   min-width: 190px;
 }
