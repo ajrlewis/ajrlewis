@@ -11,7 +11,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Alex Lewis | AI Architect & Implementation Consultant",
+  title: "Alex Lewis AI Architect",
   description:
     "Alex Lewis designs and delivers production-ready AI systems, agentic workflows, and enterprise implementations."
 };

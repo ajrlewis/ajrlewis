@@ -135,7 +135,7 @@ export default function HomePage() {
             <h1 className="hero-name">
               <span>Alex</span> <span className="gold">Lewis</span>
             </h1>
-            <p className="hero-title">AI Architect &amp; Implementation Consultant</p>
+            <p className="hero-title">AI Architect</p>
             <div className="accent-line" aria-hidden="true" />
             <p className="hero-statement">
               I design and ship production-ready AI systems that solve <span className="blue">real problems</span>.
