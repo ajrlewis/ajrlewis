@@ -95,7 +95,7 @@ const projects: Project[] = [
     icon: "network"
   },
   {
-    title: "Speedy AI",
+    title: "Digital Speed",
     tags: ["Next.js", "Vercel AI SDK", "Slack", "Internal Tools"],
     description:
       "Internal Slack assistant connected to handbook content and operational tools for high-confidence answers in context.",

@@ -16,7 +16,7 @@ describe("HomePage", () => {
     render(<HomePage />);
 
     expect(screen.getByRole("heading", { name: "RFP LangGraph Agent" })).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "Speedy AI" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Digital Speed" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Downing LLP" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Hyperhumans" })).toBeInTheDocument();
   });
