@@ -225,8 +225,8 @@ export default function HomePage() {
           <p className="section-label">MY BACKGROUND</p>
           <div className="background-panel glass-panel">
             <p className="background-summary">
-              PhD in extragalactic astrophysics (big data) to software engineering on 1M+ SKU/store forecasting
-              systems, to AI engineering, to AI architecture.
+              I moved from academia into tangible software engineering, then into my passion: architecting practical
+              AI systems.
             </p>
             <div className="background-grid">
               {backgroundSteps.map((step, index) => (
