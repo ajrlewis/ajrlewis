@@ -138,9 +138,9 @@ const projects: Project[] = [
   },
   {
     title: "Downing LLP",
-    tags: ["Microsoft Teams", "Azure", "HITL", "Ticket Routing"],
+    tags: ["LangGraph", "Azure", "HITL", "Microsoft Teams"],
     description:
-      "Teams-based triage assistant for summarizing, routing, and prioritizing internal support requests with clear escalation paths.",
+      "Architected and delivered a Python-based, Azure-native, model-agnostic AI orchestration platform (LangGraph) to automate internal support triage. Engineered a manifest-driven multi-agent framework enabling dynamic registration of department-specific bots for enterprise scaling. Delivered a production-ready Phase 1 pilot with multi-provider switching (Anthropic, Google, OpenAI) and HITL validation via Microsoft Teams for internal digital team query classification. Implemented secure, thread-aware state management using Azure PostgreSQL and Managed Identity for reliable conversation persistence and traceability. Centralized prompt management and evaluation with LangSmith to improve debugging visibility and iteration speed. Established a gated, trunk-based CI/CD pipeline in Azure DevOps, enabling progression from R&D to UAT readiness.",
     outcome: "Reduced triage time and clearer priorities.",
     icon: "chat",
     iconSrc: "/icons/microsoft-teams.svg"
