@@ -36,6 +36,7 @@ type Project = {
   description: string;
   outcome: string;
   icon: IconType;
+  iconSrc?: string;
 };
 
 const contactActions: ContactAction[] = [
@@ -99,7 +100,8 @@ const projects: Project[] = [
     description:
       "Internal Slack assistant connected to handbook content and operational tools for high-confidence answers in context.",
     outcome: "Faster answers, fewer context switches.",
-    icon: "bolt"
+    icon: "bolt",
+    iconSrc: "/icons/slack.svg"
   },
   {
     title: "Downing LLP",
@@ -107,7 +109,8 @@ const projects: Project[] = [
     description:
       "Teams-based triage assistant for summarizing, routing, and prioritizing internal support requests with clear escalation paths.",
     outcome: "Reduced triage time and clearer priorities.",
-    icon: "chat"
+    icon: "chat",
+    iconSrc: "/icons/microsoft-teams.svg"
   },
   {
     title: "Hyperhumans",
@@ -212,7 +215,11 @@ export default function HomePage() {
               <article className="project-card glass-panel" key={project.title}>
                 <div className="project-top">
                   <div className="project-icon-wrap">
-                    <Icon type={project.icon} />
+                    {project.iconSrc ? (
+                      <img className="project-icon-image" src={project.iconSrc} alt="" aria-hidden="true" />
+                    ) : (
+                      <Icon type={project.icon} />
+                    )}
                   </div>
                   {project.badge ? <span className="badge">{project.badge}</span> : null}
                 </div>

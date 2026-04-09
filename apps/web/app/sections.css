@@ -92,6 +92,12 @@
   background: rgba(14, 31, 58, 0.6);
 }
 
+.project-icon-image {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
 .badge {
   color: var(--blue-3);
   border: 1px solid rgba(110, 164, 232, 0.32);
