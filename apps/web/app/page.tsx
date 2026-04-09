@@ -119,6 +119,15 @@ const backgroundSteps: BackgroundStep[] = [
 
 const projects: Project[] = [
   {
+    title: "Downing LLP",
+    tags: ["LangGraph", "Azure", "HITL", "Microsoft Teams"],
+    description:
+      "Support triage was fragmented; delivered an Azure-native LangGraph orchestration platform with Teams HITL workflows, secure state management, and provider-flexible automation.",
+    outcome: "Reduced triage time and clearer priorities.",
+    icon: "chat",
+    iconSrc: "/icons/downing-site-icon.png"
+  },
+  {
     title: "Digital Speed",
     tags: ["Next.js", "Vercel AI SDK", "Slack", "Internal Tools"],
     description:
@@ -145,15 +154,6 @@ const projects: Project[] = [
     outcome: "Lower admin overhead and smoother daily operations.",
     icon: "network",
     iconSrc: "/icons/w4lkies-site-icon.svg"
-  },
-  {
-    title: "Downing LLP",
-    tags: ["LangGraph", "Azure", "HITL", "Microsoft Teams"],
-    description:
-      "Support triage was fragmented; delivered an Azure-native LangGraph orchestration platform with Teams HITL workflows, secure state management, and provider-flexible automation.",
-    outcome: "Reduced triage time and clearer priorities.",
-    icon: "chat",
-    iconSrc: "/icons/downing-site-icon.png"
   }
 ];
 
