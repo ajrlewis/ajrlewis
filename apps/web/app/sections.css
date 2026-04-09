@@ -235,11 +235,6 @@
   font-weight: 700;
 }
 
-.secondary-cta {
-  min-width: 136px;
-  justify-content: center;
-}
-
 .contact-details {
   display: grid;
   gap: 0.72rem;

@@ -20,6 +20,10 @@ describe("HomePage", () => {
     expect(screen.getByText(/what i offer/i)).toBeInTheDocument();
     expect(screen.getByText(/selected projects/i)).toBeInTheDocument();
     expect(screen.getByText(/get in touch/i)).toBeInTheDocument();
+    const consultationLink = screen.getByRole("link", { name: /book a consultation/i });
+    expect(consultationLink).toHaveAttribute("href", "https://calendly.com/ajrlewis");
+    expect(consultationLink).toHaveAttribute("target", "_blank");
+    expect(screen.queryByText(/^calendly$/i)).not.toBeInTheDocument();
   });
 
   it("includes the four selected project cards", () => {

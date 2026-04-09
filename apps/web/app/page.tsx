@@ -315,18 +315,15 @@ export default function HomePage() {
         <section className="contact glass-panel" aria-label="Get in Touch">
           <div>
             <p className="section-label">GET IN TOUCH</p>
-            <h2>Let&apos;s build something exceptional.</h2>
+            <h2>Let&apos;s scope your next AI system.</h2>
             <p>
-              Share your project constraints and goals, and we can map where AI creates immediate and durable value.
+              Bring your constraints, timelines, and goals. We can map a pragmatic architecture and delivery path
+              your team can execute.
             </p>
             <div className="button-row">
-              <a className="cta-button" href="mailto:hello@ajrlewis.com">
+              <a className="cta-button" href="https://calendly.com/ajrlewis" target="_blank" rel="noreferrer">
                 <Icon type="calendar" />
                 <span>Book a Consultation</span>
-              </a>
-              <a className="glass-button secondary-cta" href="https://calendly.com/ajrlewis" target="_blank" rel="noreferrer">
-                <Icon type="calendar" />
-                <span>Calendly</span>
               </a>
             </div>
           </div>
