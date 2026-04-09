@@ -34,7 +34,6 @@ type Service = {
 type BackgroundStep = {
   title: string;
   description: string;
-  indexLabel?: string;
   downloads?: DownloadAction[];
 };
 
@@ -112,10 +111,9 @@ const backgroundSteps: BackgroundStep[] = [
     description: "Shipped production forecasting systems supporting 1M+ SKU/store combinations."
   },
   {
-    title: "AI Engineering & Architecture",
+    title: "AI Architect",
     description:
-      "Designed and implemented LLM-powered workflows and automation, now leading enterprise-ready AI system design, integration, and delivery strategy.",
-    indexLabel: "..."
+      "Designed and implemented LLM-powered workflows and automation, now leading enterprise-ready AI system design, integration, and delivery strategy."
   }
 ];
 
@@ -230,7 +228,7 @@ export default function HomePage() {
             <div className="background-grid">
               {backgroundSteps.map((step, index) => (
                 <article className="background-step" key={step.title}>
-                  <span className="background-index">{step.indexLabel ?? String(index + 1).padStart(2, "0")}</span>
+                  <span className="background-index">{String(index + 1).padStart(2, "0")}</span>
                   <h2>{step.title}</h2>
                   <p>{step.description}</p>
                   {step.downloads ? (
@@ -259,6 +257,9 @@ export default function HomePage() {
                   ) : null}
                 </article>
               ))}
+              <span className="background-progress" aria-hidden="true">
+                ...
+              </span>
             </div>
           </div>
         </section>

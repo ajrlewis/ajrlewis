@@ -25,8 +25,9 @@
 
 .background-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
   gap: 0.9rem;
+  align-items: stretch;
 }
 
 .background-step {
@@ -67,6 +68,16 @@
 
 .background-links .file-button {
   min-width: 150px;
+}
+
+.background-progress {
+  align-self: center;
+  justify-self: start;
+  color: rgba(216, 176, 106, 0.82);
+  font-size: 2rem;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  padding: 0 0.2rem;
 }
 
 .download-icon-image {
@@ -292,6 +303,11 @@
   .background-grid,
   .offer-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .background-progress {
+    grid-column: 1 / -1;
+    justify-self: end;
   }
 }
 
