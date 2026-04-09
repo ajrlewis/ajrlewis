@@ -93,7 +93,7 @@ const services: Service[] = [
   {
     title: "Agentic & Workflow Systems",
     description:
-      "Implementing robust agentic and workflow systems with HITL checkpoints and deployment-ready orchestration; recommended stack: FastAPI + Next.js.",
+      "Implementing robust agentic and workflow systems with HITL checkpoints and deployment-ready orchestration; recommended stack: FastAPI + Next.js + PostgreSQL (pgvector) for semantic retrieval.",
     iconSrc: "/icons/service-workflow.svg"
   },
   {
