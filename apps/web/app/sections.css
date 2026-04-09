@@ -177,6 +177,17 @@
   width: 20px;
   height: 20px;
   display: block;
+  object-fit: contain;
+}
+
+.project-logo-wrap {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.project-logo-muted {
+  filter: grayscale(1) saturate(0.2) brightness(1.28) contrast(0.94);
+  opacity: 0.74;
 }
 
 .badge {
@@ -257,6 +268,11 @@
   align-items: center;
   gap: 0.6rem;
   color: var(--text-0);
+}
+
+.project-card:hover .project-logo-muted {
+  opacity: 0.88;
+  filter: grayscale(1) saturate(0.26) brightness(1.4) contrast(0.98);
 }
 
 .bitcoin-badge {
