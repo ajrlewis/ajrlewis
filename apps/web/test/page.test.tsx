@@ -8,6 +8,9 @@ describe("HomePage", () => {
 
     expect(screen.getByRole("heading", { name: /alex lewis/i })).toBeInTheDocument();
     expect(screen.getByText(/my background/i)).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "PhD" })).toBeInTheDocument();
+    expect(screen.getByText(/phd thesis/i)).toBeInTheDocument();
+    expect(screen.getByText(/apj paper/i)).toBeInTheDocument();
     expect(screen.getByText(/hi, i'm alex/i)).toBeInTheDocument();
     expect(screen.getByText(/what i offer/i)).toBeInTheDocument();
     expect(screen.getByText(/selected projects/i)).toBeInTheDocument();

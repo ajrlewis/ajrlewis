@@ -32,6 +32,7 @@ type Service = {
 type BackgroundStep = {
   title: string;
   description: string;
+  downloads?: DownloadAction[];
 };
 
 type Project = {
@@ -66,9 +67,9 @@ const contactActions: ContactAction[] = [
   }
 ];
 
-const downloads: DownloadAction[] = [
+const phdDownloads: DownloadAction[] = [
   { label: "PhD Thesis", href: "#", icon: "file" },
-  { label: "ApJ First Author Paper", href: "#", icon: "file" }
+  { label: "ApJ Paper", href: "#", icon: "file" }
 ];
 
 const services: Service[] = [
@@ -91,8 +92,9 @@ const services: Service[] = [
 
 const backgroundSteps: BackgroundStep[] = [
   {
-    title: "PhD Extragalactic Astrophysics",
-    description: "Built large-scale data workflows and statistical models in high-volume research environments."
+    title: "PhD",
+    description: "Built large-scale data workflows and statistical models in high-volume research environments.",
+    downloads: phdDownloads
   },
   {
     title: "Software Engineering",
@@ -191,17 +193,6 @@ export default function HomePage() {
               ))}
             </div>
 
-            <div className="button-row" role="list" aria-label="Document downloads">
-              {downloads.map((item) => (
-                <a className="glass-button file-button" href={item.href} key={item.label} role="listitem">
-                  <Icon type={item.icon} />
-                  <span className="button-copy">
-                    <span>{item.label}</span>
-                    <small>PDF</small>
-                  </span>
-                </a>
-              ))}
-            </div>
           </div>
 
           <div className="hero-media">
@@ -227,6 +218,19 @@ export default function HomePage() {
                 <span className="background-index">{String(index + 1).padStart(2, "0")}</span>
                 <h2>{step.title}</h2>
                 <p>{step.description}</p>
+                {step.downloads ? (
+                  <div className="button-row background-links" role="list" aria-label={`${step.title} documents`}>
+                    {step.downloads.map((item) => (
+                      <a className="glass-button file-button" href={item.href} key={item.label} role="listitem">
+                        <Icon type={item.icon} />
+                        <span className="button-copy">
+                          <span>{item.label}</span>
+                          <small>PDF</small>
+                        </span>
+                      </a>
+                    ))}
+                  </div>
+                ) : null}
               </article>
             ))}
           </div>
