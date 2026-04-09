@@ -45,7 +45,6 @@ type Project = {
   outcome: string;
   icon: IconType;
   iconSrc?: string;
-  logoStyle?: "default" | "muted";
 };
 
 const contactActions: ContactAction[] = [
@@ -135,8 +134,7 @@ const projects: Project[] = [
       "Teams needed reliable operational answers in Slack; built a TypeScript/Next.js AI agent with handbook and tool integrations for fast, in-context support.",
     outcome: "Faster answers, fewer context switches.",
     icon: "bolt",
-    iconSrc: "/icons/digitalspeed-site-icon.ico",
-    logoStyle: "muted"
+    iconSrc: "/icons/digitalspeed-site-icon.ico"
   },
   {
     title: "Downing LLP",
@@ -145,8 +143,7 @@ const projects: Project[] = [
       "Support triage was fragmented; delivered an Azure-native LangGraph orchestration platform with Teams HITL workflows, secure state management, and provider-flexible automation.",
     outcome: "Reduced triage time and clearer priorities.",
     icon: "chat",
-    iconSrc: "/icons/downing-site-icon.png",
-    logoStyle: "muted"
+    iconSrc: "/icons/downing-site-icon.png"
   },
   {
     title: "Hyperhumans",
@@ -155,8 +152,7 @@ const projects: Project[] = [
       "Lead discovery was manual and noisy; built the Neuralead FastAPI platform for automated enrichment, scoring, and monetized API delivery at scale.",
     outcome: "Higher-quality leads and more relevant conversations.",
     icon: "spark",
-    iconSrc: "/icons/hyperhumans-site-icon.jpg",
-    logoStyle: "muted"
+    iconSrc: "/icons/hyperhumans-site-icon.jpg"
   }
 ];
 
@@ -291,18 +287,13 @@ export default function HomePage() {
             {projects.map((project) => (
               <article className="project-card glass-panel" key={project.title}>
                 <div className="project-top">
-                  <div className={`project-icon-wrap${project.iconSrc ? " project-logo-wrap" : ""}`}>
-                    {project.iconSrc ? (
-                      <img
-                        className={`project-icon-image${project.logoStyle === "muted" ? " project-logo-muted" : ""}`}
-                        src={project.iconSrc}
-                        alt=""
-                        aria-hidden="true"
-                      />
-                    ) : (
+                  {project.iconSrc ? (
+                    <img className="project-client-logo" src={project.iconSrc} alt="" aria-hidden="true" />
+                  ) : (
+                    <div className="project-icon-wrap">
                       <Icon type={project.icon} />
-                    )}
-                  </div>
+                    </div>
+                  )}
                   {project.badge ? <span className="badge">{project.badge}</span> : null}
                 </div>
                 <h3>{project.title}</h3>
