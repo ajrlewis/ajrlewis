@@ -135,7 +135,7 @@ const projects: Project[] = [
       "Teams needed reliable operational answers in Slack; built a TypeScript/Next.js AI agent with handbook and tool integrations for fast, in-context support.",
     outcome: "Faster answers, fewer context switches.",
     icon: "bolt",
-    iconSrc: "/icons/slack.svg",
+    iconSrc: "/icons/digitalspeed-site-icon.ico",
     logoStyle: "muted"
   },
   {
@@ -145,7 +145,7 @@ const projects: Project[] = [
       "Support triage was fragmented; delivered an Azure-native LangGraph orchestration platform with Teams HITL workflows, secure state management, and provider-flexible automation.",
     outcome: "Reduced triage time and clearer priorities.",
     icon: "chat",
-    iconSrc: "/icons/microsoft-teams.svg",
+    iconSrc: "/icons/downing-site-icon.png",
     logoStyle: "muted"
   },
   {
@@ -155,7 +155,7 @@ const projects: Project[] = [
       "Lead discovery was manual and noisy; built the Neuralead FastAPI platform for automated enrichment, scoring, and monetized API delivery at scale.",
     outcome: "Higher-quality leads and more relevant conversations.",
     icon: "spark",
-    iconSrc: "/icons/hyperhumans.png",
+    iconSrc: "/icons/hyperhumans-site-icon.jpg",
     logoStyle: "muted"
   }
 ];
