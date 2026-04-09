@@ -29,6 +29,7 @@ type DownloadAction = {
 type Service = {
   title: string;
   description: string;
+  iconSrc: string;
 };
 
 type BackgroundStep = {
@@ -86,17 +87,20 @@ const services: Service[] = [
   {
     title: "AI Architecture",
     description:
-      "Designing AI systems that integrate cleanly with your product, data model, API boundaries, infrastructure, and security posture."
+      "Designing AI systems that integrate cleanly with your product, data model, API boundaries, infrastructure, and security posture.",
+    iconSrc: "/icons/service-architecture.svg"
   },
   {
     title: "Agentic & Workflow Systems",
     description:
-      "Implementing robust LangGraph and HITL pipelines with FastAPI, Dockerized services, and deployment-ready operational patterns."
+      "Implementing robust LangGraph and HITL pipelines with FastAPI, Dockerized services, and deployment-ready operational patterns.",
+    iconSrc: "/icons/service-workflow.svg"
   },
   {
     title: "Prototypes That Deliver",
     description:
-      "Rapid validation focused on measurable ROI, clean documentation, and handover paths that enable internal teams to scale confidently."
+      "Rapid validation focused on measurable ROI, clean documentation, and handover paths that enable internal teams to scale confidently.",
+    iconSrc: "/icons/service-delivery.svg"
   }
 ];
 
@@ -269,7 +273,9 @@ export default function HomePage() {
           <div className="offer-grid">
             {services.map((service) => (
               <article className="service-card" key={service.title}>
-                <div className="service-icon" aria-hidden="true" />
+                <div className="service-icon" aria-hidden="true">
+                  <img className="service-icon-image" src={service.iconSrc} alt="" />
+                </div>
                 <h2>{service.title}</h2>
                 <p>{service.description}</p>
               </article>
