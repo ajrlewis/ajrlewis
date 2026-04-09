@@ -206,33 +206,35 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="background glass-panel" aria-label="My Background">
+        <section className="background" aria-label="My Background">
           <p className="section-label">MY BACKGROUND</p>
-          <p className="background-summary">
-            PhD in extragalactic astrophysics (big data) to software engineering on 1M+ SKU/store forecasting systems,
-            to AI engineering, to AI architecture.
-          </p>
-          <div className="background-grid">
-            {backgroundSteps.map((step, index) => (
-              <article className="background-step" key={step.title}>
-                <span className="background-index">{String(index + 1).padStart(2, "0")}</span>
-                <h2>{step.title}</h2>
-                <p>{step.description}</p>
-                {step.downloads ? (
-                  <div className="button-row background-links" role="list" aria-label={`${step.title} documents`}>
-                    {step.downloads.map((item) => (
-                      <a className="glass-button file-button" href={item.href} key={item.label} role="listitem">
-                        <Icon type={item.icon} />
-                        <span className="button-copy">
-                          <span>{item.label}</span>
-                          <small>PDF</small>
-                        </span>
-                      </a>
-                    ))}
-                  </div>
-                ) : null}
-              </article>
-            ))}
+          <div className="background-panel glass-panel">
+            <p className="background-summary">
+              PhD in extragalactic astrophysics (big data) to software engineering on 1M+ SKU/store forecasting
+              systems, to AI engineering, to AI architecture.
+            </p>
+            <div className="background-grid">
+              {backgroundSteps.map((step, index) => (
+                <article className="background-step" key={step.title}>
+                  <span className="background-index">{String(index + 1).padStart(2, "0")}</span>
+                  <h2>{step.title}</h2>
+                  <p>{step.description}</p>
+                  {step.downloads ? (
+                    <div className="button-row background-links" role="list" aria-label={`${step.title} documents`}>
+                      {step.downloads.map((item) => (
+                        <a className="glass-button file-button" href={item.href} key={item.label} role="listitem">
+                          <Icon type={item.icon} />
+                          <span className="button-copy">
+                            <span>{item.label}</span>
+                            <small>PDF</small>
+                          </span>
+                        </a>
+                      ))}
+                    </div>
+                  ) : null}
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 
