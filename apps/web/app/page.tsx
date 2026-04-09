@@ -107,8 +107,8 @@ const backgroundSteps: BackgroundStep[] = [
     downloads: phdDownloads
   },
   {
-    title: "Software Engineering",
-    description: "Shipped production forecasting systems supporting 1M+ SKU/store combinations."
+    title: "Software Enginer",
+    description: "Shipped production forecasting systems supporting 1M+ SKU/store combinations with adaptive retraining."
   },
   {
     title: "AI Architect",
