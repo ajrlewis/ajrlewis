@@ -98,15 +98,21 @@ const phdDownloads: DownloadAction[] = [
 
 const services: Service[] = [
   {
-    title: "AI ROI Consulting",
+    title: "Consulting",
     description:
-      "I assess your workflows and constraints to identify where AI can improve ROI, then define a practical delivery plan.",
+      "I assess workflows and constraints to identify where AI can improve ROI and define a practical delivery plan.",
     iconSrc: "/icons/service-architecture.svg"
   },
   {
-    title: "Implementation & Team Enablement",
+    title: "Implementing",
     description:
-      "I implement production-ready systems and teach your team how to use, operate, and extend what we build. Recommended stack: FastAPI + Next.js + PostgreSQL (pgvector) for semantic retrieval.",
+      "I build production-ready systems that fit your existing tools and data. Typical stack: FastAPI + Next.js + PostgreSQL (pgvector).",
+    iconSrc: "/icons/service-workflow.svg"
+  },
+  {
+    title: "Teaching",
+    description:
+      "I mentor your team with practical handover, documentation, and training so they can operate and extend what we build.",
     iconSrc: "/icons/service-delivery.svg"
   }
 ];
