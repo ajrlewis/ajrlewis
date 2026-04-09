@@ -212,10 +212,10 @@ export default function HomePage() {
 
           <div className="hero-media">
             <div className="image-frame glass-panel">
-              <img src="/profile.jpg" alt="Alex Lewis observing at LABOCA in the Atacama Desert, Chile" />
+              <img src="/profile.jpg" alt="Alex Lewis observing at ALMA/LABOCA in the Atacama Desert, Chile" />
               <div className="image-caption">
-                <Icon type="pin" />
-                <span>Observing at LABOCA, Atacama Desert, Chile</span>
+                <img className="caption-icon-image" src="/icons/telescope.svg" alt="" aria-hidden="true" />
+                <span>Observing at ALMA/LABOCA, Atacama Desert, Chile</span>
               </div>
             </div>
           </div>

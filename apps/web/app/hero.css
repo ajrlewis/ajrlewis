@@ -164,6 +164,13 @@
   border: 1px solid rgba(255, 255, 255, 0.16);
 }
 
+.caption-icon-image {
+  width: 16px;
+  height: 16px;
+  display: block;
+  flex: 0 0 16px;
+}
+
 .icon {
   width: 16px;
   height: 16px;
