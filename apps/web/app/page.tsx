@@ -79,7 +79,7 @@ const contactActions: ContactAction[] = [
 ];
 
 const phdDownloads: DownloadAction[] = [
-  { label: "PhD Thesis", href: "/thesis.pdf", icon: "file", iconSrc: "/icons/thesis-download.svg" }
+  { label: "PhD Thesis PDF", href: "/thesis.pdf", icon: "file", iconSrc: "/icons/telescope.svg" }
 ];
 
 const services: Service[] = [
@@ -237,7 +237,14 @@ export default function HomePage() {
                   {step.downloads ? (
                     <div className="button-row background-links" role="list" aria-label={`${step.title} documents`}>
                       {step.downloads.map((item) => (
-                        <a className="glass-button file-button" href={item.href} key={item.label} role="listitem">
+                        <a
+                          className="glass-button file-button"
+                          href={item.href}
+                          key={item.label}
+                          role="listitem"
+                          target={item.href.endsWith(".pdf") ? "_blank" : undefined}
+                          rel={item.href.endsWith(".pdf") ? "noreferrer" : undefined}
+                        >
                           {item.iconSrc ? (
                             <img className="download-icon-image" src={item.iconSrc} alt="" aria-hidden="true" />
                           ) : (
