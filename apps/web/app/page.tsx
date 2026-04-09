@@ -79,7 +79,7 @@ const contactActions: ContactAction[] = [
 ];
 
 const phdDownloads: DownloadAction[] = [
-  { label: "PhD Thesis PDF", href: "/thesis.pdf", icon: "file", iconSrc: "/icons/telescope.svg" }
+  { label: "Thesis", href: "/thesis.pdf", icon: "file", iconSrc: "/icons/telescope.svg" }
 ];
 
 const services: Service[] = [
