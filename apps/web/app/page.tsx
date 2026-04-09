@@ -172,8 +172,7 @@ export default function HomePage() {
             <p className="hero-title">AI Architect</p>
             <div className="accent-line" aria-hidden="true" />
             <p className="hero-statement">
-              Hi, I&apos;m Alex. I design and ship production-ready AI systems that solve{" "}
-              <span className="blue">real problems</span>.
+              Hi, I&apos;m Alex.
             </p>
             <p className="hero-intro">
               I architect and implement LLM-powered systems, workflow engines, and internal tools tuned for enterprise constraints.
