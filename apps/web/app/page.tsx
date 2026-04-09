@@ -144,7 +144,8 @@ const projects: Project[] = [
     description:
       "LLM-driven lead generation workflow integrating enrichment and qualification signals into existing outreach operations.",
     outcome: "Higher-quality leads and more relevant conversations.",
-    icon: "spark"
+    icon: "spark",
+    iconSrc: "/icons/hyperhumans.png"
   }
 ];
 
