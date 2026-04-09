@@ -29,6 +29,11 @@ type Service = {
   description: string;
 };
 
+type BackgroundStep = {
+  title: string;
+  description: string;
+};
+
 type Project = {
   title: string;
   badge?: string;
@@ -81,6 +86,25 @@ const services: Service[] = [
     title: "Prototypes That Deliver",
     description:
       "Rapid validation focused on measurable ROI, clean documentation, and handover paths that enable internal teams to scale confidently."
+  }
+];
+
+const backgroundSteps: BackgroundStep[] = [
+  {
+    title: "PhD Extragalactic Astrophysics",
+    description: "Built large-scale data workflows and statistical models in high-volume research environments."
+  },
+  {
+    title: "Software Engineering",
+    description: "Shipped production forecasting systems supporting 1M+ SKU/store combinations."
+  },
+  {
+    title: "AI Engineering",
+    description: "Designed and implemented LLM-powered workflows, tools, and operational automation."
+  },
+  {
+    title: "AI Architecture",
+    description: "Now leading enterprise-ready AI system design, integration, and delivery strategy."
   }
 ];
 
@@ -138,7 +162,8 @@ export default function HomePage() {
             <p className="hero-title">AI Architect</p>
             <div className="accent-line" aria-hidden="true" />
             <p className="hero-statement">
-              I design and ship production-ready AI systems that solve <span className="blue">real problems</span>.
+              Hi, I&apos;m Alex. I design and ship production-ready AI systems that solve{" "}
+              <span className="blue">real problems</span>.
             </p>
             <p className="hero-intro">
               I architect and implement LLM-powered systems, workflow engines, and internal tools tuned for enterprise constraints.
@@ -187,6 +212,23 @@ export default function HomePage() {
                 <span>Observing at LABOCA, Atacama Desert, Chile</span>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="background glass-panel" aria-label="My Background">
+          <p className="section-label">MY BACKGROUND</p>
+          <p className="background-summary">
+            PhD in extragalactic astrophysics (big data) to software engineering on 1M+ SKU/store forecasting systems,
+            to AI engineering, to AI architecture.
+          </p>
+          <div className="background-grid">
+            {backgroundSteps.map((step, index) => (
+              <article className="background-step" key={step.title}>
+                <span className="background-index">{String(index + 1).padStart(2, "0")}</span>
+                <h2>{step.title}</h2>
+                <p>{step.description}</p>
+              </article>
+            ))}
           </div>
         </section>
 

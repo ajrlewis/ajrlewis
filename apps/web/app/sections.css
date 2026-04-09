@@ -6,6 +6,56 @@
   text-transform: uppercase;
 }
 
+.background {
+  border-radius: 24px;
+  padding: clamp(1.2rem, 3vw, 2rem);
+}
+
+.background-summary {
+  margin: 0.82rem 0 1.2rem;
+  color: var(--text-1);
+  max-width: 84ch;
+  line-height: 1.65;
+}
+
+.background-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.background-step {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(7, 12, 20, 0.34);
+  padding: 0.9rem;
+}
+
+.background-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.1rem;
+  padding: 0.18rem 0.48rem;
+  border-radius: 999px;
+  color: var(--gold-2);
+  border: 1px solid rgba(216, 176, 106, 0.36);
+  background: rgba(216, 176, 106, 0.1);
+  font-size: 0.72rem;
+}
+
+.background-step h2 {
+  margin: 0.68rem 0 0;
+  font-size: 1rem;
+}
+
+.background-step p {
+  margin: 0.58rem 0 0;
+  color: var(--text-1);
+  line-height: 1.55;
+  font-size: 0.9rem;
+}
+
 .offer {
   border-radius: 24px;
   padding: clamp(1.2rem, 3vw, 2rem);
@@ -188,6 +238,7 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .background-grid,
   .offer-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -200,6 +251,7 @@
 }
 
 @media (max-width: 700px) {
+  .background-grid,
   .projects-grid,
   .offer-grid {
     grid-template-columns: 1fr;
