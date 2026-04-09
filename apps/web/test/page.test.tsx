@@ -9,8 +9,9 @@ describe("HomePage", () => {
     expect(screen.getByRole("heading", { name: /a\.\s*j\.\s*r\.\s*lewis/i })).toBeInTheDocument();
     expect(screen.getByText(/my background/i)).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "PhD" })).toBeInTheDocument();
-    expect(screen.getByText(/phd thesis/i)).toBeInTheDocument();
-    expect(screen.getByText(/apj paper/i)).toBeInTheDocument();
+    const thesisLink = screen.getByText(/phd thesis/i).closest("a");
+    expect(thesisLink).toHaveAttribute("href", "/thesis.pdf");
+    expect(screen.queryByText(/apj paper/i)).not.toBeInTheDocument();
     expect(screen.getByText(/hi, i'm alex/i)).toBeInTheDocument();
     expect(screen.getByText(/observing at alma\/laboca, atacama desert, chile, 2016/i)).toBeInTheDocument();
     expect(screen.getByText(/bitcoin accepted here/i)).toBeInTheDocument();

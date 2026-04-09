@@ -23,6 +23,7 @@ type DownloadAction = {
   label: string;
   href: string;
   icon: IconType;
+  iconSrc?: string;
 };
 
 type Service = {
@@ -78,8 +79,7 @@ const contactActions: ContactAction[] = [
 ];
 
 const phdDownloads: DownloadAction[] = [
-  { label: "PhD Thesis", href: "#", icon: "file" },
-  { label: "ApJ Paper", href: "#", icon: "file" }
+  { label: "PhD Thesis", href: "/thesis.pdf", icon: "file", iconSrc: "/icons/thesis-download.svg" }
 ];
 
 const services: Service[] = [
@@ -238,7 +238,11 @@ export default function HomePage() {
                     <div className="button-row background-links" role="list" aria-label={`${step.title} documents`}>
                       {step.downloads.map((item) => (
                         <a className="glass-button file-button" href={item.href} key={item.label} role="listitem">
-                          <Icon type={item.icon} />
+                          {item.iconSrc ? (
+                            <img className="download-icon-image" src={item.iconSrc} alt="" aria-hidden="true" />
+                          ) : (
+                            <Icon type={item.icon} />
+                          )}
                           <span className="button-copy">
                             <span>{item.label}</span>
                             <small>PDF</small>
