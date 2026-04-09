@@ -8,7 +8,7 @@ describe("HomePage", () => {
 
     expect(screen.getByRole("heading", { name: /a\.\s*j\.\s*r\.\s*lewis/i })).toBeInTheDocument();
     expect(screen.getByText(/my background/i)).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "PhD" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Astrophysicist" })).toBeInTheDocument();
     const thesisLink = screen.getByText(/thesis/i).closest("a");
     expect(thesisLink).toHaveAttribute("href", "/thesis.pdf");
     expect(thesisLink).toHaveAttribute("target", "_blank");

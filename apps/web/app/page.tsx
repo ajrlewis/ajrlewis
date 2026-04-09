@@ -102,7 +102,7 @@ const services: Service[] = [
 
 const backgroundSteps: BackgroundStep[] = [
   {
-    title: "PhD",
+    title: "Astrophysicist",
     description: "Built large-scale data workflows and statistical models in high-volume research environments.",
     downloads: phdDownloads
   },
