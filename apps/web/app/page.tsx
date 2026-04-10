@@ -106,7 +106,7 @@ const services: Service[] = [
   {
     title: "Implementing",
     description:
-      "I build production-ready, provider-agnostic systems with no vendor lock-in, including drag-and-drop workflows and evals from day one. Typical stack: FastAPI + Next.js + PostgreSQL (pgvector).",
+      "I build production-ready, provider-agnostic systems with no vendor lock-in, including drag-and-drop workflows and evals from day one. Typical stack: FastAPI + Next.js + PostgreSQL (pgvector), Docker-containerized by default.",
     iconSrc: "/icons/service-workflow.svg"
   },
   {
