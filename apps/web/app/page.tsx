@@ -35,6 +35,8 @@ type Service = {
   title: string;
   description: string;
   iconSrc: string;
+  highlights?: Array<{ label: string; value: string }>;
+  result?: string;
 };
 
 type BackgroundStep = {
@@ -106,7 +108,14 @@ const services: Service[] = [
   {
     title: "Implementing",
     description:
-      "I build production-ready, provider-agnostic systems with no vendor lock-in, including drag-and-drop workflows and evals from day one. Typical stack: FastAPI + Next.js + PostgreSQL (pgvector), Docker-containerized by default.",
+      "I build high-performance, provider-agnostic systems designed for total ownership. By avoiding proprietary silos and integrating automated evals from day one, your infrastructure stays portable and scalable.",
+    highlights: [
+      { label: "The Stack", value: "Production-grade FastAPI, Next.js, and PostgreSQL (pgvector)." },
+      { label: "The Strategy", value: "Docker-containerized by default for cloud or on-prem deployment." },
+      { label: "The Edge", value: "Custom drag-and-drop workflows for fast iteration without architectural drift." }
+    ],
+    result:
+      "You own the code, the data, and the keys, with a production-ready system instead of a black-box subscription.",
     iconSrc: "/icons/service-workflow.svg"
   },
   {
@@ -317,6 +326,20 @@ export default function HomePage() {
                 </div>
                 <h2>{service.title}</h2>
                 <p>{service.description}</p>
+                {service.highlights ? (
+                  <ul className="service-highlights" aria-label={`${service.title} highlights`}>
+                    {service.highlights.map((item) => (
+                      <li key={item.label}>
+                        <strong>{item.label}:</strong> {item.value}
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+                {service.result ? (
+                  <p className="service-result">
+                    <strong>The Result:</strong> {service.result}
+                  </p>
+                ) : null}
               </article>
             ))}
           </div>
