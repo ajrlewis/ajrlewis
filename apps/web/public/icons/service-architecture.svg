@@ -1,9 +1,6 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="2.75" y="2.75" width="6.5" height="6.5" rx="1.25" stroke="#6EA4E8" stroke-width="1.5"/>
-  <rect x="14.75" y="2.75" width="6.5" height="6.5" rx="1.25" stroke="#6EA4E8" stroke-width="1.5"/>
-  <rect x="8.75" y="14.75" width="6.5" height="6.5" rx="1.25" stroke="#6EA4E8" stroke-width="1.5"/>
-  <path d="M9.25 6H14.75" stroke="#6EA4E8" stroke-width="1.5" stroke-linecap="round"/>
-  <path d="M6 9.25V11.5C6 12.3284 6.67157 13 7.5 13H12" stroke="#6EA4E8" stroke-width="1.5" stroke-linecap="round"/>
-  <path d="M18 9.25V11.5C18 12.3284 17.3284 13 16.5 13H12" stroke="#6EA4E8" stroke-width="1.5" stroke-linecap="round"/>
-  <circle cx="12" cy="13" r="1.85" fill="#D8B06A"/>
+  <circle cx="9.5" cy="9.5" r="4.75" stroke="#6EA4E8" stroke-width="1.5"/>
+  <path d="M13.1 13.1L17.25 17.25" stroke="#6EA4E8" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M7.2 10.2L8.8 8.7L9.9 9.8L12 7.8" stroke="#D8B06A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M6.7 6.8H12.3" stroke="#6EA4E8" stroke-width="1.3" stroke-linecap="round" opacity="0.7"/>
 </svg>
