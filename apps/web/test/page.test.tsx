@@ -18,6 +18,7 @@ describe("HomePage", () => {
     expect(screen.getByText(/in front of alma whilst observing with laboca, atacama desert, chile, 2016/i)).toBeInTheDocument();
     expect(screen.getByText(/bitcoin accepted here/i)).toBeInTheDocument();
     expect(screen.getByText(/what i offer/i)).toBeInTheDocument();
+    expect(screen.getByText(/I use AI to augment teams/i)).toBeInTheDocument();
     expect(screen.getByText(/selected projects/i)).toBeInTheDocument();
     expect(screen.getByText(/get in touch/i)).toBeInTheDocument();
     const nostrLink = screen.getByRole("link", { name: /nostr/i });

@@ -135,7 +135,7 @@ const services: Service[] = [
       { label: "The Goal", value: "Internal ownership from week one, with clear support boundaries and maintenance rhythms." }
     ],
     result:
-      "Your team can run, improve, and extend the system without long-term external dependency.",
+      "Your team can run, improve, and extend the system with AI as a productivity tool, not a replacement for people.",
     iconSrc: "/icons/service-delivery.svg"
   }
 ];
@@ -332,6 +332,10 @@ export default function HomePage() {
 
         <section className="offer glass-panel" aria-label="What I Offer">
           <p className="section-label">WHAT I OFFER</p>
+          <p className="offer-note">
+            I use AI to augment teams, reduce repetitive work, and improve delivery quality, not to make people
+            redundant.
+          </p>
           <div className="offer-grid">
             {services.map((service) => (
               <article className="service-card" key={service.title}>

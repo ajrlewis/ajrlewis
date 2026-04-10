@@ -93,6 +93,13 @@
   padding: clamp(1.2rem, 3vw, 2rem);
 }
 
+.offer-note {
+  margin: 0.62rem 0 0;
+  color: var(--text-1);
+  max-width: 72ch;
+  line-height: 1.6;
+}
+
 .offer-grid {
   margin-top: 1.3rem;
   display: grid;
