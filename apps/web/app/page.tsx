@@ -103,6 +103,13 @@ const services: Service[] = [
     title: "Consulting",
     description:
       "I assess workflows and constraints to identify where AI can improve ROI, then work with your CTO to define and implement the right delivery path.",
+    highlights: [
+      { label: "The Discovery", value: "Map workflows, constraints, and baseline metrics before committing to build." },
+      { label: "The Priorities", value: "Rank use cases by ROI, risk, and implementation complexity." },
+      { label: "The Plan", value: "Define architecture, rollout phases, and ownership with your CTO and technical leads." }
+    ],
+    result:
+      "You get a clear, measurable AI roadmap your team can execute with confidence.",
     iconSrc: "/icons/service-architecture.svg"
   },
   {
