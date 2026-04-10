@@ -333,8 +333,8 @@ export default function HomePage() {
         <section className="offer glass-panel" aria-label="What I Offer">
           <p className="section-label">WHAT I OFFER</p>
           <p className="offer-note">
-            I use AI to augment teams, reduce repetitive work, and improve delivery quality, not to make people
-            redundant.
+            I use AI to augment teams, reduce repetitive work, and improve delivery quality. I am in favor of scaling
+            output without default headcount growth, but not reducing existing teams in favor of automation.
           </p>
           <div className="offer-grid">
             {services.map((service) => (
