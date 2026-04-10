@@ -121,7 +121,14 @@ const services: Service[] = [
   {
     title: "Teaching",
     description:
-      "I mentor your team with practical handover, documentation, and training so they can operate and extend what we build.",
+      "I mentor your team with practical handover, documentation, and training so they can operate and extend what we build with confidence.",
+    highlights: [
+      { label: "The Handover", value: "Runbooks, architecture notes, and operating checklists tailored to your team." },
+      { label: "The Training", value: "Hands-on sessions for developers and operators across workflows, evals, and day-to-day usage." },
+      { label: "The Goal", value: "Internal ownership from week one, with clear support boundaries and maintenance rhythms." }
+    ],
+    result:
+      "Your team can run, improve, and extend the system without long-term external dependency.",
     iconSrc: "/icons/service-delivery.svg"
   }
 ];
